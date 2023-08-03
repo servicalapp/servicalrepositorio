@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IkumaTransport.janelas.SemGps"
+             BackgroundColor="white">
+    <Grid>
+        <ScrollView Grid.Row="0">
+            <StackLayout Orientation="Vertical" Padding="30,40,40,40" Spacing="10"
+                         VerticalOptions="Center">
+                <Image Source="semnet.png" HorizontalOptions="Fill" HeightRequest="400"
+               VerticalOptions="Start"/>
+                <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="30"
+                       FontFamily="Arial Rounded MT Bold" TextColor="black" FontAttributes="Bold">
+                    <Label.Text>Sem GPS</Label.Text>
+                </Label>
+                <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="20"
+                       FontFamily="Arial Rounded MT Bold" TextColor="gray" >
+                    <Label.Text>Permita a captura da sua localização e ligue o gps</Label.Text>
+                </Label>
+
+
+
+                <Frame CornerRadius="5"  
+       BackgroundColor="#FFC000"
+                  HeightRequest="30"     >
+                    <StackLayout Orientation="Horizontal" 
+                         Padding="0,0,0,30"
+                                 HorizontalOptions="Center"
+                              BackgroundColor="#FFC000"
+                         VerticalOptions="End">
+
+                        <Image Source="net.png" HorizontalOptions="Fill" HeightRequest="30"
+               VerticalOptions="Start"/>
+                        <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="15"
+                       FontFamily="Arial Rounded MT Bold" TextColor="white" 
+                            Text="LIGAR"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Avanca"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

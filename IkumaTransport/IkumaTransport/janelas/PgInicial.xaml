@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.PgInicial"
+             BackgroundColor="Blue">
+<MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="White">
+            <Grid BackgroundColor="#F1BF00">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid BackgroundColor="#F1BF00">
+                    <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <StackLayout BackgroundColor="#F1BF00">
+<Frame CornerRadius="100" 
+           HorizontalOptions="Center"
+           Padding="0"
+           IsClippedToBounds="True"
+                                   BackgroundColor="#F1BF00"
+                                   >
+<Image  x:Name="fotoperfil"
+               Source="perfil.png" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center" 
+                  HeightRequest="100"
+                  WidthRequest="100"/>
+</Frame>
+<StackLayout.GestureRecognizers>
+<TapGestureRecognizer Tapped="IrPerfil"/>
+</StackLayout.GestureRecognizers>
+</StackLayout>
+<Label x:Name="nomeperfil" TextColor="White" FontSize="Large">
+                            <Label.Text>Sem perfil aberto</Label.Text>
+</Label>
+</StackLayout>
+</Grid>
+
+                <StackLayout Margin="0" Grid.Row="1" Spacing="15" BackgroundColor="#F1BF00">
+                    <ListView x:Name="navigationDrawerList" RowHeight="60" SeparatorVisibility="None" BackgroundColor="#F1BF00" ItemSelected="OnMenuItemSelected">
+<ListView.ItemTemplate>
+<DataTemplate>
+<ViewCell>
+<!-- Main design for our menu items -->
+<StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20">
+<Image Source="{Binding Icon}" WidthRequest="40" HeightRequest="40" VerticalOptions="Center" />
+<Label x:Name="bing143"  Text="{Binding Title}" FontSize="Medium" VerticalOptions="Center" TextColor="white" />
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+</ListView.ItemTemplate>
+</ListView>
+</StackLayout>
+</Grid>
+</ContentPage>
+</MasterDetailPage.Master>
+
+    <MasterDetailPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <OnPlatform.iOS>menu.png</OnPlatform.iOS>
+            <OnPlatform.Android>menu.png</OnPlatform.Android>
+        </OnPlatform>
+    </MasterDetailPage.Icon>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+</NavigationPage>
+
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

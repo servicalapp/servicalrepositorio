@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.Cadastro"
+             BackgroundColor="#EAEAEA">
+<Grid>
+
+        <StackLayout x:Name="inicio" Orientation="Vertical">
+
+            <Image Source="Logo.png" WidthRequest="80" Margin="30"/>
+
+            <StackLayout Margin="20">
+                <Image Source="botao1.png" WidthRequest="300"/>
+                <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ircliente"/>
+                    </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout>
+                <Image Source="botao2.png" WidthRequest="300"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="irprofissional"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+          
+        </StackLayout>
+
+        <StackLayout x:Name="fiminicio"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="End">
+            <Image Source="padrao1.png" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+
+
+        <StackLayout x:Name="cadastrocliente" Orientation="Vertical" 
+                     >
+            <Image Source="Logo.png" WidthRequest="80" Margin="40"/>
+            <Label Text="Email ou Telefone" Margin="50,0,0,5" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"/>
+            <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41" 
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                <StackLayout  HeightRequest="15">
+                    <Entry x:Name="email" Margin="30,0,30,0" Placeholder="Serviçal@servical.com/9XX XXX XXX" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41" WidthRequest="300"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Senha" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+            <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41" 
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                <StackLayout HeightRequest="15" Orientation="Horizontal">
+                    <Entry x:Name="senha" Placeholder="********" IsPassword="true" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regukar" FontSize="18" PlaceholderColor="#CC0B2B41"
+                                    WidthRequest="300"/>
+                    <StackLayout>
+                        <Image x:Name="imagemsenha" Source="olhofechado.png" WidthRequest="30" Margin="0,0,20,0"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="verpalavrapass"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame 
+            WidthRequest="400"
+            Margin="40,20,40,15"
+                 HeightRequest="30"
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" 
+                           Padding="10">
+                <StackLayout HeightRequest="40">
+                    <Label HorizontalTextAlignment="Center"
+                        FontSize="25" FontFamily="Noir Pro"
+                               TextColor="white" FontAttributes="Bold">
+                        <Label.Text>Entrar</Label.Text>
+                    </Label>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="cadastracliente"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame 
+            WidthRequest="400"
+            Margin="40,40,40,5"
+            CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                HeightRequest="40"
+                           Padding="10">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="30" Padding="10">
+                    <Image Source="google.png" HeightRequest="20" Margin="0,0,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="18"
+                       FontFamily="Noir Pro Semi Bold" Margin="5,0,0,0"
+                               TextColor="#0B2B41" FontAttributes="Bold">
+                        <Label.Text>Entrar com Google</Label.Text>
+                    </Label>
+                    <!--<StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="avanca"/>
+                    </StackLayout.GestureRecognizers>-->
+                </StackLayout>
+            </Frame>
+
+
+            <Frame 
+            WidthRequest="400"
+            Margin="40,10,40,5"
+            CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                HeightRequest="40"
+                           Padding="10">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="30" Padding="10">
+                    <Image Source="fb.png" HeightRequest="20" Margin="0,0,0,0"/>
+                    <Label HorizontalTextAlignment="Center" Margin="5,0,0,0"
+                        FontFamily="Noir Pro Semi Bold" FontSize="18"
+                               TextColor="#0B2B41" FontAttributes="Bold">
+                        <Label.Text>Entrar com Facebook</Label.Text>
+                    </Label>
+                    <!--<StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="avanca"/>
+                    </StackLayout.GestureRecognizers>-->
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+
+
+
+
+
+
+        <StackLayout x:Name="cadastroprofissional" Orientation="Vertical">
+            <Image Source="Logo.png" WidthRequest="80" Margin="0,40,0,20"/>
+            <Label Text="Cadastro do profissional" FontFamily="Noir Pro Semi Bold" FontSize="20" TextColor="#CC0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+
+            <StackLayout x:Name="figura1">
+                <Label Text="Nome Próprio" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <Entry x:Name="nomeprofissional" Margin="30,0,30,0" Placeholder="Serviçal" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41" WidthRequest="300"/>
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Apelido" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <Entry x:Name="apelidoprofissional" Margin="30,0,30,0" Placeholder="Serviçal" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41" WidthRequest="300"/>
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Telefone" Margin="50,0,0,5" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41" 
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <Entry x:Name="fone" Margin="30,0,30,0" Placeholder="9XX XXX XXX" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41" WidthRequest="300"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            
+            
+            <StackLayout x:Name="figura2">
+
+                <Label Text="Data de Nascimento" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <DatePicker  x:Name="nascimento" Margin="30,0,30,0" 
+        TextColor="#0B2B41" FontSize="18" WidthRequest="300"  FontFamily="Noir Pro Regular"/>
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Género" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <Picker x:Name="genero" Margin="30,0,30,0"  Title="Género"
+        TextColor="#0B2B41" FontSize="18" WidthRequest="300"  FontFamily="Noir Pro Regular">
+                            <Picker.Items>
+                                <x:String>Masculino</x:String>
+                                <x:String>Feminino</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+
+               <!-- <Label Text="Morada Atual" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                       BorderColor="#CC0B2B41"
+                  Margin="40,0,40,5" >
+                    <StackLayout  Orientation="Horizontal">
+                        <Entry x:Name="morada" Margin="30,0,30,0" Placeholder="Cidade, Município, Rua, Bairro" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41" WidthRequest="200"/>
+                        <StackLayout>
+                            <Image Source="pesquisa.png" WidthRequest="20" Margin="0,5,20,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="abremapa"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>-->
+                <Label Text="Profissão" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" >
+                    <StackLayout  HeightRequest="15">
+                        <Picker x:Name="profissao" Margin="30,0,30,0"  Title="Profissão"
+        TextColor="#0B2B41" FontSize="18" WidthRequest="300"  FontFamily="Noir Pro Regular">
+                            <Picker.Items>
+                                <x:String>Profissão1</x:String>
+                                <x:String>Profissão2</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+            <StackLayout x:Name="figura3">
+
+
+                
+
+
+
+                <Label Text="Senha" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41" 
+                  Margin="40,0,40,5" >
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="senha1" Placeholder="********" IsPassword="true" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regukar" FontSize="18" PlaceholderColor="#CC0B2B41"
+                                    WidthRequest="300"/>
+                        <StackLayout>
+                            <Image x:Name="imagemsenha1" Source="olhofechado.png" WidthRequest="30" Margin="0,5,20,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="verpalavrapass"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Label Text="Confirmar" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="5"  
+                       BorderColor="#CC0B2B41" 
+                  Margin="40,0,40,5" >
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="confirma" Placeholder="********" IsPassword="true" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regukar" FontSize="18" PlaceholderColor="#CC0B2B41"
+                                    WidthRequest="300"/>
+                        <StackLayout>
+                            <Image x:Name="imagemconfirma" Source="olhofechado.png" WidthRequest="30" Margin="0,5,20,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="verpalavrapass"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+            </StackLayout>
+            <StackLayout x:Name="figura4">
+                <Image Source="upload.png" HeightRequest="50" />
+                <Image Source="upload.png" HeightRequest="50" />
+
+
+                <Label Text="Qual é o teu preço por hora?" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#CC0B2B41"
+                       HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#85D598"
+                           Padding="10"  
+                       BorderColor="#85D598"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" HorizontalOptions="Center">
+                    <StackLayout  HeightRequest="15">
+                        <Entry x:Name="preco" Placeholder="0.00 AOA" Margin="30,0,30,0" Text="" TextColor="#0B2B41"
+           FontFamily="Noir Pro Regular" FontSize="18" PlaceholderColor="#CC0B2B41"  WidthRequest="150" Keyboard="Numeric"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+        </StackLayout> 
+
+        <Frame x:Name="btncadastra"
+            WidthRequest="400"
+            Margin="40,20,40,15"
+                 HeightRequest="30"
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" 
+                           Padding="10" VerticalOptions="End">
+            <StackLayout HeightRequest="40">
+                <Label x:Name="textobtn"
+                    HorizontalTextAlignment="Center"
+                        FontSize="25" FontFamily="Noir Pro Semi Bold"
+                               TextColor="white" FontAttributes="Bold">
+                    <Label.Text>Cadastrar</Label.Text>
+                </Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="cadastraprofissional"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Frame>
+
+
+
+        <map:Map IsShowingUser="true" x:Name="MyMap" MapType="Street" HasZoomEnabled="True"
+             MapClicked="clicknomapa">
+            <map:Map.ItemTemplate>
+                <DataTemplate>
+                    <map:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding PlaceName}" />
+                </DataTemplate>
+            </map:Map.ItemTemplate>
+        </map:Map>
+
+    </Grid>
+</ContentPage>

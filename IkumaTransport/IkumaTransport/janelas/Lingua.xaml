@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             BackgroundColor="#FFFF"
+                 x:Class="IkumaTransport.janelas.Lingua">
+
+    <Grid>
+        <ScrollView BackgroundColor="#FFFF" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="StartAndExpand">
+            <StackLayout Margin="20" Padding="10" x:Name="adicionarlinguas" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+
+                <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irporingles"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="EstadosUnidos.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="eng" Text="English" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irporchines"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="China.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="ch" Text="中文" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irporespanhol"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="Espanha.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="esp" Text="Español" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>
+
+               <!-- <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irporarab"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="ArabiaSaudita.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="arab" Text="العربية" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>-->
+
+                <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irporfrances"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="Frana.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="fr" Text="Français" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Irportugues"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="Portugal.png" WidthRequest="50" HeightRequest="50" />
+                    <Label x:Name="pt" Text="Português" FontFamily="Candara" TextColor="Black"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

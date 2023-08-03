@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             BackgroundColor="#EAEAEA"
+                 x:Class="IkumaTransport.janelas.Chat">
+    <Grid>
+
+        <ScrollView Margin="30,80,30,150">
+            <StackLayout Orientation="Vertical">
+
+                <Frame 
+            Margin="0,30,0,10"
+            CornerRadius="50"  
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand"
+                   HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+                        <Frame Margin="15" HeightRequest="50" WidthRequest="50"
+                            CornerRadius="100" 
+           Padding="0"
+           IsClippedToBounds="True"
+                                   BackgroundColor="#EAEAEA">
+                            <Grid>
+                                <Image Source="logo.png" Aspect="AspectFit"/>
+                            </Grid>
+                        </Frame>
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="15">
+                            <Label Text="Serviçal" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="naovisto.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="Olá! Tudo bem?" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Padding="10" Margin="20,0,20,20"
+                        CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                       BorderColor="#FFFF"
+                        IsClippedToBounds="True"
+               HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                <Editor x:Name="sms" Text="" HeightRequest="100" WidthRequest="300" TextColor="#0B2B41"/>
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="enviar.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="enviar.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.Notificacoes"
+            BackgroundColor="#EAEAEA">
+    <Grid>
+
+        <Frame Padding="1"
+            CornerRadius="100"  
+       BackgroundColor="#EAEAEA" 
+                       BorderColor="#EAEAEA"
+               HorizontalOptions="End" Margin="0,0,40,0" VerticalOptions="Start">
+            <StackLayout>
+                <Image Source="perfil.png" WidthRequest="50"/>
+            </StackLayout>
+        </Frame>
+
+
+        <ScrollView Margin="30,80,30,150">
+            <StackLayout Orientation="Vertical">
+
+                <Frame 
+            Margin="0,30,0,10"
+            CornerRadius="50"  
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand"
+                   HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Martins Francisco" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="naovisto.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="Estou bem e a senhora?" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="10:38" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+            BackgroundColor="#EAEAEA"
+                 x:Class="IkumaTransport.janelas.Comentarios">
+    <Grid>
+
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+
+                <StackLayout Orientation="Horizontal">
+
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="3" HorizontalOptions="Center" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela1.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela1.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela1.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Label Text="1" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Label Text="0" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Label Text="0" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Label Text="0" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="2">
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Image Source="estrela.png" WidthRequest="10" HeightRequest="10"/>
+                            <Label Text="0" FontFamily="" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+
+
+                <Frame 
+            Margin="0,30,0,10"
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="15">
+                            <Label Text="10/12/2023 10:10" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="estrela.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="3" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                                </StackLayout>
+                            <Label Text="Não gostei do produto" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame 
+            Margin="0,30,0,10"
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="15">
+                            <Label Text="10/12/2023 10:10" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="estrela.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="3" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                            <Label Text="Não gostei do produto" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame 
+            Margin="0,30,0,10"
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="15">
+                            <Label Text="10/12/2023 10:10" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="estrela.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="3" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                            <Label Text="Amei" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

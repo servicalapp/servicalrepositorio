@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:IkumaTransport="clr-namespace:IkumaTransport"
+             x:Class="IkumaTransport.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="Keyboard" Value="Default" />
+                <Setter Property="IsReadOnly" Value="True" />
+                <Setter Property="IsReadOnly" Value="False" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

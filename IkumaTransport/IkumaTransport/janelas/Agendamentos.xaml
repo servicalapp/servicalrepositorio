@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             BackgroundColor="#EAEAEA"
+                 x:Class="IkumaTransport.janelas.Agendamentos">
+<!--<Grid>
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="StartAndExpand">
+<StackLayout x:Name="osagendamentos" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="FillAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<Label x:Name="bingacomodacoes" Margin="40" Text="Acomodações" FontFamily="Candara" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+<Button Text="" WidthRequest="400" HeightRequest="15" BackgroundColor="#13182C"/>
+<StackLayout x:Name="agendamentosacomodacoes" Orientation="Vertical" WidthRequest="400" VerticalOptions="FillAndExpand">
+</StackLayout>
+</StackLayout>
+</ScrollView>
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="FillAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<Label x:Name="bingalugaviatura" Margin="40" Text="Aluguer de viaturas" FontFamily="Candara" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+<Button Text="" WidthRequest="400" HeightRequest="15" BackgroundColor="#13182C"/>
+<StackLayout x:Name="agendamentosaluguer" Orientation="Vertical" WidthRequest="400" VerticalOptions="FillAndExpand">
+</StackLayout>
+</StackLayout>
+</ScrollView>
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="FillAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<Label x:Name="bingguia" Margin="40" Text="Guias turísticos" FontFamily="Candara" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+<Button Text="" WidthRequest="400" HeightRequest="15" BackgroundColor="#13182C"/>
+<StackLayout x:Name="agendamentosguia" Orientation="Vertical" WidthRequest="400" VerticalOptions="FillAndExpand">
+</StackLayout>
+</StackLayout>
+</ScrollView>
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="FillAndExpand">
+<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<Label x:Name="bingviagem" Margin="40" Text="Viagens" FontFamily="Candara" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+<Button Text="" WidthRequest="400" HeightRequest="15" BackgroundColor="#13182C"/>
+<StackLayout x:Name="agendamentosviagem" Orientation="Vertical" WidthRequest="400" VerticalOptions="FillAndExpand">
+</StackLayout>
+</StackLayout>
+</ScrollView>
+</StackLayout>
+</ScrollView>
+</Grid>-->
+
+    <Grid>
+
+        <ScrollView Margin="30">
+            <StackLayout Orientation="Vertical" x:Name="poemmenu">
+
+                <Frame x:Name="osolicitante"
+            Margin="0,30,0,10"
+       BackgroundColor="#F1BF00" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Nome do cliente" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="2023/07/10 10:00 - Torcar Pneu em Talatona " FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout>
+                        <Image Source="negar.png" HeightRequest="30" VerticalOptions="Start"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="negar"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <StackLayout>
+                            <Image Source="agendar.png" HeightRequest="30" VerticalOptions="Start"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="abreagenda"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame 
+           Margin="0,30,0,10"
+       BackgroundColor="#F1BF00" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Nome do cliente" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="2023/07/10 10:00 - Torcar Pneu em Talatona \n Ver mais informações
+                                       aparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudo
+                                       aparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudo
+                                       aparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudoaparece aqui tudo" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <Image Source="negar.png" HeightRequest="30" VerticalOptions="Start"/>
+                    <StackLayout>
+                    <Image Source="agendar.png" HeightRequest="30" VerticalOptions="Start"/>
+                        <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="abremenu"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+            </StackLayout>
+                </Frame>
+                
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

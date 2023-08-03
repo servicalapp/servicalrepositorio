@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.BoasVindas"
+             BackgroundColor="#EAEAEA"
+             BackgroundImageSource="boasvindas.png">
+    <Grid>
+
+
+        <!--     <StackLayout Orientation="Vertical" InputTransparent = "true"> <StackLayout HorizontalOptions="StartAndExpand"
+            VerticalOptions="Start">
+                    <Image Source="boasvindas.png" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+
+                <Label Text="Bem-vindo" FontFamily="" FontSize="30" TextColor="Gray" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" Margin="40"/>
+                <Label Text="Somos uma startup que surgiu com o intuito
+de dignificar a vida de milhões de pessoas que
+desejam trabalhar de forma autônoma." FontFamily="" FontSize="18" TextColor="Gray"
+                       HorizontalTextAlignment="Center" Margin="40"/>
+            </StackLayout>-->
+
+
+            <Frame 
+                Padding="10,0,10,0"
+                HorizontalOptions="Center"
+            Margin="20,0,0,0"
+                VerticalOptions="End"
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00">
+            <StackLayout WidthRequest="100" VerticalOptions="Center">
+                <Label HeightRequest="50"
+                        HorizontalTextAlignment="Center"
+                           FontFamily="Noir Pro" 
+                        FontSize="20"
+                       VerticalOptions="Center"
+                               TextColor="white" FontAttributes="Bold">
+                        <Label.Text>Começar ></Label.Text>
+                    </Label>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="avanca"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Frame>
+        
+
+
+       <!-- <StackLayout HorizontalOptions="StartAndExpand"
+            VerticalOptions="End">
+            <Image Source="padrao.png" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>-->
+
+    </Grid>
+</ContentPage>

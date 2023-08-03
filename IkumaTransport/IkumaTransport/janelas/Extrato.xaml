@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             BackgroundColor="#EAEAEA"
+                 x:Class="IkumaTransport.janelas.Extrato">
+    <Grid>
+
+       <!-- <Frame Padding="1"
+            CornerRadius="100"  
+       BackgroundColor="#EAEAEA" 
+                       BorderColor="#EAEAEA"
+               HorizontalOptions="End" Margin="0,0,40,0" VerticalOptions="Start">
+            <StackLayout>
+                <Image Source="perfil.png" WidthRequest="50"/>
+            </StackLayout>
+        </Frame>-->
+
+        <Label Text="Estatísticas" FontFamily="Noir Pro Semi Bold" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                      Margin="50,10,0,5"/>
+        <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                       BorderColor="#CC0B2B41"
+                   HeightRequest="30" 
+                  Margin="40,0,40,5" VerticalOptions="Start" HorizontalOptions="Center">
+            <StackLayout  HeightRequest="15">
+                <Picker x:Name="genero" Margin="30,0,30,0"  Title="Género"
+        TextColor="#0B2B41" FontSize="18" WidthRequest="300"  FontFamily="Noir Pro Regular" 
+                        >
+                    <Picker.Items>
+                        <x:String>Hoje</x:String>
+                        <x:String>Esta semana</x:String>
+                        <x:String>Este mês</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+        </Frame>
+
+
+        <ScrollView Margin="30,80,30,150">
+            <StackLayout Orientation="Vertical">
+
+                <Frame 
+            Margin="0,30,0,10"
+            CornerRadius="50"  
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand"
+                   HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Serviço de Baba - MG01" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <!-- <Image Source="naovisto.png" HeightRequest="15" WidthRequest="15"/>-->
+                                <Label Text="Por 2h à 10.000 AOA" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+                       <!-- <StackLayout Orientation="Vertical">
+                            <Label Text="10:38" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>-->
+                    </StackLayout>
+                </Frame>
+
+                <Frame 
+            Margin="0,30,0,10"
+            CornerRadius="50"  
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand"
+                   HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="1 serviço pelo dia 28/07/2023" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <!-- <Image Source="naovisto.png" HeightRequest="15" WidthRequest="15"/>-->
+                                <Label Text="Total: 10.000 AOA" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <!-- <StackLayout Orientation="Vertical">
+                            <Label Text="10:38" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                        </StackLayout>-->
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             x:Class="IkumaTransport.janelas.SemNet"
+             BackgroundColor="white">
+    <Grid>
+        <ScrollView Grid.Row="0">
+            <StackLayout Orientation="Vertical" Padding="30,40,40,40" Spacing="10"
+                         VerticalOptions="Center">
+                <Image Source="semnet.png" HorizontalOptions="Fill" HeightRequest="400"
+               VerticalOptions="Start"/>
+                <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="30"
+                       FontFamily="Arial Rounded MT Bold" TextColor="black" FontAttributes="Bold">
+                    <Label.Text>Sem Internet</Label.Text>
+                </Label>
+                <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="20"
+                       FontFamily="Arial Rounded MT Bold" TextColor="gray" >
+                    <Label.Text>Ligue-se a internet e continue</Label.Text>
+                </Label>
+
+
+
+                <Frame CornerRadius="5"  
+       BackgroundColor="#FFC000"
+                  HeightRequest="30"   
+                           Padding="10"  
+                       BorderColor="#CC 009CFF"
+                        IsClippedToBounds="True"
+       xct:ShadowEffect.Color="#CC 009CFF"
+       xct:ShadowEffect.Radius="5"
+       xct:ShadowEffect.Opacity="5">
+                    <StackLayout Orientation="Horizontal" 
+                         Padding="0,0,0,30"
+                                 HorizontalOptions="Center"
+                              BackgroundColor="#FFC000"
+                         VerticalOptions="End">
+
+                        <Image Source="net.png" HorizontalOptions="Start" HeightRequest="30"
+               VerticalOptions="Start"/>
+                        <Label 
+                               HorizontalTextAlignment="Center"
+                        FontSize="15"
+                       FontFamily="Arial Rounded MT Bold" TextColor="White" 
+                            Text="LIGAR"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Avanca"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.Perfil"
+              BackgroundColor="#EAEAEA">
+
+    <Grid>
+
+                <Image Source="olhoaberto.png" WidthRequest="40" HorizontalOptions="End" Margin="0,0,40,0" VerticalOptions="Start"/>
+           
+        <Frame Padding="0"
+            CornerRadius="100"  
+       BackgroundColor="#FFFF" 
+                       BorderColor="#FFFF" Margin="0,80,0,-200" VerticalOptions="StartAndExpand"
+               HorizontalOptions="StartAndExpand">
+            <ScrollView Margin="0,150,0,200">
+            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                
+                <Label Text="Martins Francisco" FontFamily="Noir" FontSize="20" HorizontalOptions="Center" TextColor="#1D5959" FontAttributes="Bold"/>
+                    <Label Text="Mecânico de Ligeiros" FontFamily="Noir" FontSize="15" HorizontalOptions="Center" TextColor="#3B876E" />
+                    <Label Text="Luanda/Talatona" FontFamily="Noir" FontSize="15" HorizontalOptions="Center" TextColor="#3B876E" />
+
+                <StackLayout Orientation="Horizontal" Padding="2" HorizontalOptions="Center">
+                    <Image Source="estrela.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="estrela.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="estrela.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="estrela.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="estrela.png" WidthRequest="30" HeightRequest="30"/>
+                </StackLayout>
+
+              <!--  <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="chamada.png" WidthRequest="40" HeightRequest="40" Margin="20"/>
+                    <Image Source="chat.png" WidthRequest="40" HeightRequest="40"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="5" HorizontalOptions="Center">
+                    <Image Source="esquerda.png" WidthRequest="15" />
+
+                    <Frame  
+                   CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                      WidthRequest="400"
+                        HeightRequest="200">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Image Source="perfil.png" HorizontalOptions="FillAndExpand" 
+                                   VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Image Source="direita.png" WidthRequest="15" />
+                </StackLayout>
+
+                <Label Text="É necessário pagar o diagnóstico para poder falar
+com o prestador de serviço, e explicar a situação
+que deseja resolver!" Margin="50,0,50,0" FontFamily="Noir" FontSize="15" TextColor="#CC0B2B41"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Pagar Diagnóstico" FontFamily="Noir" FontSize="18" TextColor="#CC0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" Margin="20"/>
+                <Frame CornerRadius="30"  
+       BackgroundColor="#85D598"
+                           Padding="10"  
+                       BorderColor="#85D598"
+                   HeightRequest="30" 
+                  Margin="50,0,50,10" HorizontalOptions="Center"
+                       WidthRequest="200">
+                    <StackLayout  HeightRequest="15">
+                        <Label Text="5.000.00 AOA" FontFamily="Noir Pro" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                    <Frame CornerRadius="30"  
+       BackgroundColor="#F1BF00"
+                           Padding="10"  
+                       BorderColor="#F1BF00"
+                  Margin="10" HorizontalOptions="Center"
+                           WidthRequest="400">
+                        <StackLayout Orientation="Horizontal"> 
+                            <Label Text="Reparação da Caixa" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                            <StackLayout  Orientation="Vertical">
+                                <Label Text="4.000.00 AOA" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Por Hora" FontFamily="Noir Pro" FontSize="12" TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                                    <Grid HeightRequest="5" WidthRequest="80">
+                                    
+                                        <Image Source="mais.png" Aspect="AspectFill" />
+                                        
+                                        <StackLayout>
+                                            <Label Text="1" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame CornerRadius="30"  
+       BackgroundColor="#F1BF00"
+                           Padding="10"  
+                       BorderColor="#F1BF00"
+                  Margin="10" HorizontalOptions="Center"
+                           WidthRequest="400">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Reparação da Caixa" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                            <StackLayout  Orientation="Vertical">
+                                <Label Text="4.000.00 AOA" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Por Hora" FontFamily="Noir Pro" FontSize="12" TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                                    <Grid HeightRequest="5" WidthRequest="80">
+                                   
+                                        <Image Source="mais.png" Aspect="AspectFill" />
+                                    
+                                        <StackLayout>
+                                            <Label Text="1" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+
+
+                    <Label Text="Total" FontFamily="Noir Pro" FontSize="18" TextColor="#CC0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                    <Frame CornerRadius="30"  
+       BackgroundColor="#EAEAEA"
+                           Padding="10"  
+                   HeightRequest="30" 
+                  Margin="50,0,50,5" HorizontalOptions="Center"
+                           WidthRequest="200">
+                        <StackLayout  HeightRequest="15">
+                        <Label Text="7.000.00 AOA" FontFamily="Noir Pro" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame 
+            WidthRequest="400"
+            Margin="40,20,40,15"
+                 HeightRequest="30"
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" 
+                           Padding="10" VerticalOptions="End">
+                    <StackLayout HeightRequest="40">
+                        <Label HorizontalTextAlignment="Center"
+                        FontSize="25" FontFamily="Noir"
+                               TextColor="white" FontAttributes="Bold">
+                            <Label.Text>Pagar</Label.Text>
+                        </Label>
+                    </StackLayout>
+                </Frame>-->
+
+
+                <Frame 
+            WidthRequest="400"
+            Margin="40,20,40,15"
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" 
+                           Padding="10" VerticalOptions="End">
+                    <StackLayout Orientation="Horizontal">
+
+                            <Frame Padding="5"
+            CornerRadius="100" 
+              BackgroundColor="#EAEAEA" 
+                                   HeightRequest="50"
+                  WidthRequest="50">
+                                <Image  
+               Source="perfil.png" 
+                  HeightRequest="50"
+                  WidthRequest="50"/>
+                            </Frame>
+
+                            <StackLayout  Orientation="Vertical" VerticalOptions="Center" Margin="10">
+                            <Label Text="Martins Francisco" FontFamily="Noir Pro" FontSize="18" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                            <Label Text="Cliente do ranger rover" FontFamily="Noir Pro" FontSize="15" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+
+                        <Image Source="chamada.png" WidthRequest="40" VerticalOptions="Center"/>
+                            <Image Source="chat1.png" WidthRequest="30" VerticalOptions="Center" Margin="5"/>
+                            <Image Source="menu1.png" HeightRequest="30" VerticalOptions="Center"/>
+
+                    </StackLayout>
+                </Frame>
+
+
+
+                <Frame  
+                   CornerRadius="30"  
+       BackgroundColor="#CCEAEAEA"
+                           Padding="10"  
+                    HorizontalOptions="End"
+                    Margin="0,-200,20,200">
+                    <StackLayout  Orientation="Vertical" Margin="10">
+                        <Label Text="Perfil" FontFamily="Noir Pro" FontSize="12" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                        <Label Text="Guardar" FontFamily="Noir Pro" FontSize="12" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                        <Label Text="Pausar" FontFamily="Noir Pro" FontSize="12" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                        <Label Text="Encerrar" FontFamily="Noir Pro" FontSize="12" TextColor="#0B2B41" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                
+                
+            </StackLayout>
+        </ScrollView>
+        </Frame>
+
+        <Frame Padding="5"
+            CornerRadius="100" 
+              BackgroundColor="#EAEAEA" 
+               HorizontalOptions="Center" Margin="10" VerticalOptions="Start">
+            <Image  
+               Source="perfil.png" 
+                  HeightRequest="200"
+                  WidthRequest="200"/>
+        </Frame>
+
+
+    </Grid>
+
+</ContentPage>

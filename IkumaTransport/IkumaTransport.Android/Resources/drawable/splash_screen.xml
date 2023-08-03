@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <color android:color="@color/splash_background"/>
+  </item>
+	<!--<bitmap
+		android:width="1dp"
+	android:height="1dp"
+        android:src="@drawable/paragif"
+        android:gravity="center"/>-->
+	<item>
+		<bitmap
+			android:src="@drawable/capa"/>
+	</item>
+</layer-list>
+
+<!--
+android:tileMode="disabled"
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+	<color android:color="@color/splash_background"/>
+	<item>
+	  <bitmap
+		  android:width="0dp"
+	  android:height="0dp"
+        android:src="@drawable/centrosplash"
+        android:tileMode="disabled"
+        android:gravity="center"/>
+  </item>
+    <item android:drawable="@drawable/paragif" android:duration="200" />
+    <item android:drawable="@drawable/paragif" android:duration="200" />
+</animation-list>-->
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@drawable/centrosplash"
+     android:fillAfter="true">
+
+    <translate 
+        android:fromXDelta="0%"
+        android:toXDelta="-100%"
+        android:duration="1000"/>
+
+</set>-->

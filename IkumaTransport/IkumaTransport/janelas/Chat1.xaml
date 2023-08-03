@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+            BackgroundColor="#EAEAEA"
+                 x:Class="IkumaTransport.janelas.Chat1">
+    <Grid>
+
+        <Frame Padding="1"
+            CornerRadius="100"  
+       BackgroundColor="#EAEAEA" 
+                       BorderColor="#EAEAEA"
+               HorizontalOptions="End" Margin="0,0,40,0" VerticalOptions="Start">
+            <StackLayout>
+        <Image Source="perfil.png" WidthRequest="50"/>
+            </StackLayout>
+        </Frame>
+
+
+        <ScrollView Margin="30,80,30,150">
+            <StackLayout Orientation="Vertical">
+
+                <Frame CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                           Padding="10"  
+                       BorderColor="#FFFF"
+                  HeightRequest="40" >
+                    <StackLayout HeightRequest="15" Orientation="Horizontal">
+                        <Entry Placeholder="" Text="" TextColor="black"
+           FontFamily="Noir Pro" FontSize="15" PlaceholderColor="gray"
+                                    WidthRequest="300"/>
+                        <Image Source="pesquisa.png" WidthRequest="20" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <!--<Frame CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                           Padding="1"  
+                       BorderColor="#FFFF"
+                  HeightRequest="40" 
+                       HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="20">
+                        <Entry Placeholder="" Text="" TextColor="black"
+           FontFamily="Noir Pro" FontSize="15" PlaceholderColor="gray"/>
+                        <Image Source="pesquisa.png" WidthRequest="20" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>-->
+
+
+                <Frame 
+            Margin="0,30,0,10"
+            CornerRadius="50"  
+       BackgroundColor="#FFFF" 
+                           Padding="10"
+                HorizontalOptions="FillAndExpand"
+                   HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+                        <Frame Margin="15" HeightRequest="50" WidthRequest="50"
+                            CornerRadius="100" 
+           Padding="0"
+           IsClippedToBounds="True"
+                                   BackgroundColor="#EAEAEA">
+                            <Grid>
+                                <Image Source="logo.png" Aspect="AspectFit"/>
+                            </Grid>
+                        </Frame>
+                        <Image Source="online.png" HeightRequest="15" WidthRequest="15" Margin="-20,0,0,20"  VerticalOptions="End"/>
+
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="15">
+                            <Label Text="Martins Francisco" FontFamily="" FontSize="18" TextColor="#0B2B41"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="naovisto.png" HeightRequest="15" WidthRequest="15"/>
+                                <Label Text="Estou bem e a senhora?" FontFamily="" FontSize="15" TextColor="#0B2B41"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                            <Label Text="10:38" FontFamily="Noir" FontSize="15" TextColor="#0B2B41"/>
+                            <Frame CornerRadius="100" Padding="10" IsClippedToBounds="True" WidthRequest="20" HeightRequest="20" BackgroundColor="#F1BF00">
+                                <Label Text="1" FontFamily="Noir" FontSize="20" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="15" HeightRequest="15" FontAttributes="Bold"/>
+                            </Frame>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Padding="10" Margin="20,0,20,20"
+                        CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                       BorderColor="#FFFF"
+                        IsClippedToBounds="True"
+               HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <StackLayout   BackgroundColor="white" Orientation="Horizontal">
+                <Editor x:Name="sms" Text="" HeightRequest="100" WidthRequest="300" TextColor="#0B2B41"/>
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="enviar.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                    <!--<StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </StackLayout.GestureRecognizers>-->
+                </StackLayout>
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="enviar.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                  <!--  <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </StackLayout.GestureRecognizers>-->
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+    <!--<Grid>
+<ScrollView BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Start">
+<StackLayout x:Name="oschat" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+</StackLayout>
+</ScrollView>
+<ScrollView Margin="0,90,0,130" BackgroundColor="#FFC000" Grid.Row="0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="StartAndExpand">
+<StackLayout x:Name="oschat1" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+</StackLayout>
+</ScrollView>
+
+</Grid>-->
+</ContentPage>

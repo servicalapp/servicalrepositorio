@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="IkumaTransport.janelas.PaginaInicial"
+             BackgroundColor="#EAEAEA">
+<Grid x:Name="fechado">
+
+        <Frame Padding="1"
+            CornerRadius="100"  
+       BackgroundColor="#EAEAEA" 
+                       BorderColor="#EAEAEA"
+               HorizontalOptions="End" Margin="0,0,40,0" VerticalOptions="Start">
+            <StackLayout>
+                <Image x:Name="foto" Source="perfil.png" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="irperfil"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+       </Frame>
+
+        <StackLayout Orientation="Vertical" Margin="40,50,0,0" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <Label x:Name="data" Text="01 Julho, 2023" FontFamily="Noir" FontSize="15" TextColor="#0B2B41"/>
+                <Label x:Name="nomeperfil" Text="Nome do perfil!" FontFamily="Noir" FontSize="20" TextColor="#0B2B41" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <Frame CornerRadius="30"  
+       BackgroundColor="#FFFF"
+                           Padding="10"  
+                       BorderColor="#FFFF" Margin="10,20,30,0">
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="" Text="" TextColor="#0B2B41"
+           FontFamily="Noir" FontSize="15" PlaceholderColor="#CC0B2B41"
+                                    WidthRequest="300" TextChanged="pesquisar"/>
+                    <StackLayout>
+                        <Image Source="pesquisa.png" WidthRequest="20" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+        <Frame x:Name="baixaprofissional"
+            Padding="0"
+            CornerRadius="100"  
+       BackgroundColor="#FFFF" Margin="0,400,0,-200" VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand">
+            <ScrollView HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Button WidthRequest="80" HeightRequest="1" BackgroundColor="#F5C300" Text=""
+                                HorizontalOptions="Center" Margin="30" Clicked="baixaprofissionais"/>
+
+                        <StackLayout x:Name="profissionais">
+                            
+                            <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <StackLayout  Orientation="Vertical" HorizontalOptions="Start" Margin="40,0,40,0">
+                                    <Label Text="Martins Francisco" FontSize="18" FontAttributes="Bold" FontFamily="Noir" TextColor="#1D5959"/>
+                                <Label Text="Mecânico de Pesados" FontSize="15" FontFamily="Noir" TextColor="#3B876E"/>
+                                </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" HorizontalOptions="End" Margin="40,0,40,0">
+                                <Label Text="5.000.00 AOA" FontSize="18"  FontFamily="Noir" TextColor="#0B2B41" FontAttributes="Bold"/>
+                                <Label Text="Por Hora" FontSize="15"  FontFamily="Noir" TextColor="#3B876E"/>
+                                </StackLayout>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                        
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+
+
+
+
+        <ScrollView Orientation="Horizontal"  Margin="0,200,0,380">
+            <StackLayout  Orientation="Horizontal" x:Name="asprofissoes" HeightRequest="100">
+
+                <Frame Margin="20" 
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" HeightRequest="100">
+                    <StackLayout Orientation="Vertical" WidthRequest="200"
+                            HeightRequest="100">
+                        <Label Text="Mecânica" FontFamily="NoirPro-Regular" FontSize="18" TextColor="White" HorizontalOptions="Center"/>
+                        <Image Source="logo.png" WidthRequest="80" HeightRequest="80" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="20" 
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" HeightRequest="100">
+                    <StackLayout Orientation="Vertical" WidthRequest="200"
+                            HeightRequest="100">
+                        <Label Text="Mecânica" FontFamily="NoirPro-Regular" FontSize="18" TextColor="White" HorizontalOptions="Center"/>
+                        <Image Source="logo.png" WidthRequest="80" HeightRequest="80" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="20" 
+            CornerRadius="30"  
+       BackgroundColor="#F1BF00" HeightRequest="100">
+                    <StackLayout Orientation="Vertical" WidthRequest="200"
+                            HeightRequest="100">
+                        <Label Text="Mecânica" FontFamily="NoirPro-Regular" FontSize="18" TextColor="White" HorizontalOptions="Center"/>
+                        <Image Source="logo.png" WidthRequest="80" HeightRequest="80" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+
+            </StackLayout>
+        </ScrollView>
+    
+    <StackLayout  Orientation="Horizontal" Padding="10" HorizontalOptions="Center" Margin="10" VerticalOptions="End" BackgroundColor="#EAEAEA" >
+            <StackLayout>
+                <Image  Source="chat.png" HeightRequest="50" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="irchat"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout>
+                <Image  Source="agendar.png" HeightRequest="50" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="iragendamentos"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout>
+                <Image  Source="estatistica.png" HeightRequest="50" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="iraextrato"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout>
+                <Image  Source="inicio.png" HeightRequest="50" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="irinicio"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout>
+                <Image  Source="notificacoes.png" HeightRequest="50" WidthRequest="50"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="irnotificacoes"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
+
